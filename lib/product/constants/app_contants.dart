@@ -11,4 +11,11 @@ abstract class AppConstants {
   ];
 
   static const EdgeInsets pagePadding = EdgeInsets.all(12);
+
+  static const List<String> feelingImages = [
+    'love_face.png',
+    'cool_face.png',
+    'happy_face.png',
+    'sad_face.png',
+  ];
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:heroapps_demo/product/widgets/card/feeling_card.dart';
 import 'package:heroapps_demo/product/widgets/icon/notification_bell.dart';
 import 'package:heroapps_demo/product/constants/app_contants.dart';
 import 'package:heroapps_demo/product/widgets/text/custom_hello_text.dart';
@@ -26,6 +27,12 @@ class _HomeViewState extends State<HomeView> {
         padding: AppConstants.pagePadding,
         children: const [
           CustomHelloText(name: 'Sara Rose'),
+          SizedBox(
+            height: 20,
+          ),
+          FeelingCard(
+            feelingImages: AppConstants.feelingImages,
+          )
         ],
       ),
     );

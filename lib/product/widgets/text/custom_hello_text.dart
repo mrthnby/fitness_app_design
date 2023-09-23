@@ -13,14 +13,15 @@ class CustomHelloText extends StatelessWidget {
             text: 'Hello, ',
             style: TextStyle(
               color: Colors.brown.shade700,
-              fontSize: 30,
+              fontSize: 23,
+              fontWeight: FontWeight.w500,
             ),
           ),
           TextSpan(
             text: name,
             style: TextStyle(
               color: Colors.brown.shade700,
-              fontSize: 30,
+              fontSize: 23,
               fontWeight: FontWeight.bold,
             ),
           )
