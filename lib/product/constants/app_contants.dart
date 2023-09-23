@@ -6,9 +6,9 @@ import 'package:heroapps_demo/view/profile/view/profile_view.dart';
 abstract class AppConstants {
   static const List<Widget> pages = [
     HomeView(),
-    ProfileView(),
+    ProfileView(name: 'Jade', image: 'person_image.jpeg',),
     HomeView(),
-    ProfileView(),
+    ProfileView(name: 'Jade', image: 'person_image.jpeg',),
   ];
 
   static const EdgeInsets pagePadding = EdgeInsets.all(12);

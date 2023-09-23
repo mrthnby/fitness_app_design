@@ -20,7 +20,6 @@ class FeatureCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Container(
-        height: 180,
         padding: const EdgeInsets.all(24),
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
@@ -29,6 +28,7 @@ class FeatureCard extends StatelessWidget {
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Expanded(
               flex: 5,

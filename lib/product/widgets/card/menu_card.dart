@@ -70,7 +70,7 @@ class _MenuCardState extends State<MenuCard> {
                     width: 8.0,
                     height: 8.0,
                     margin: const EdgeInsets.symmetric(
-                        vertical: 10.0, horizontal: 2.0),
+                        vertical: 5.0, horizontal: 2.0),
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       color: _currentIndex == index

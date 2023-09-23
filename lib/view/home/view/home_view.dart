@@ -21,9 +21,9 @@ class _HomeViewState extends State<HomeView> {
       appBar: AppBar(
         elevation: 0,
         actions: [
-          IconButton(
+          NotificationBell(
+            hasNotification: true,
             onPressed: () {},
-            icon: const NotificationBell(hasNotification: true),
           )
         ],
       ),
@@ -32,13 +32,13 @@ class _HomeViewState extends State<HomeView> {
         children: [
           const CustomHelloText(name: 'Sara Rose'),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           const FeelingCard(
             feelingImages: AppConstants.feelingImages,
           ),
           const SizedBox(
-            height: 20,
+            height: 10,
           ),
           const MenuCard(
             title: 'Feature',
@@ -67,7 +67,7 @@ class _HomeViewState extends State<HomeView> {
             ],
           ),
           const SizedBox(
-            height: 20,
+            height: 5,
           ),
           MenuCard(
             title: 'Exercise',

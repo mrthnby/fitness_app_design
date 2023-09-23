@@ -35,8 +35,8 @@ class FeelingCard extends StatelessWidget {
                     },
                     borderRadius: BorderRadius.circular(50),
                     child: Ink(
-                      height: 80,
-                      width: 80,
+                      height: 60,
+                      width: 60,
                       padding: EdgeInsets.zero,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
