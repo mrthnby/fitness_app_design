@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MainView extends StatefulWidget {
-  const MainView({required this.pages,super.key});
+  const MainView({required this.pages, super.key});
   final List<Widget> pages;
   @override
   State<MainView> createState() => _MainViewState();
@@ -76,7 +76,7 @@ class _MainViewState extends State<MainView> {
         opacity: index == _currentIndex ? 1 : 0,
         child: Icon(
           Icons.brightness_1,
-          size: 10,
+          size: 7,
           color: Colors.green.shade700,
         ),
       ),
