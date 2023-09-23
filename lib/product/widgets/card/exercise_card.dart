@@ -16,39 +16,45 @@ class ExerciseCard extends StatelessWidget {
           crossAxisSpacing: 30),
       itemCount: exercises.length,
       itemBuilder: (context, index) => _singleExerciseCard(
-       exercise: exercises[index],
+        exercise: exercises[index],
+        onTap: () {},
       ),
     );
   }
 }
 
 class _singleExerciseCard extends StatelessWidget {
-  const _singleExerciseCard({required this.exercise});
+  const _singleExerciseCard({required this.exercise, required this.onTap});
   final Exercise exercise;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 40,
-      decoration: BoxDecoration(
-        color: exercise.color,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Expanded(
-        child: ListTile(
-          contentPadding:
-              const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          leading: Image.asset(
-            exercise.path.imagePath,
-            height: 30,
-            width: 30,
-          ),
-          title: Text(
-            exercise.path.imageMood.capitalize,
-            textAlign: TextAlign.start,
-            style: const TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
+    return InkWell(
+      borderRadius: BorderRadius.circular(12),
+      onTap: onTap,
+      child: Ink(
+        height: 40,
+        decoration: BoxDecoration(
+          color: exercise.color,
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Expanded(
+          child: ListTile(
+            contentPadding:
+                const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            leading: Image.asset(
+              exercise.path.imagePath,
+              height: 30,
+              width: 30,
+            ),
+            title: Text(
+              exercise.path.imageMood.capitalize,
+              textAlign: TextAlign.start,
+              style: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
