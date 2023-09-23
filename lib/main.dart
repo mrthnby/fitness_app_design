@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:heroapps_demo/product/constants/app_contants.dart';
 import 'package:heroapps_demo/view/main/view/main_view.dart';
 
 void main() {
@@ -11,12 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: const MainView());
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const MainView(
+        pages: AppConstants.pages,
+      ),
+    );
   }
 }
