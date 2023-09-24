@@ -1,16 +1,12 @@
-# heroapps_demo
+# Hero Game Demo
+Demo app for an interview
 
-A new Flutter project.
+## Demo Video
+https://github.com/mrthnby/hero_demo/assets/72457200/8e727308-5cb7-4d9a-b0e8-6f6140b1a646
 
-## Getting Started
+## Screenshot
+<div align="center">
+  <img width="350" alt="home" src="https://github.com/mrthnby/hero_demo/assets/72457200/fc2eaf58-a802-46a3-b5eb-375e619a4817">
+  <img width="350" alt="home" src="https://github.com/mrthnby/hero_demo/assets/72457200/31e4b233-f6fa-432a-bd92-0849b8684d67">
+</div>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
