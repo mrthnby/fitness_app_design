@@ -52,6 +52,7 @@ class _MenuCardState extends State<MenuCard> {
           items: widget.children,
           options: CarouselOptions(
             scrollPhysics: const BouncingScrollPhysics(),
+            enableInfiniteScroll: widget.children.length > 1 ,
             viewportFraction: 1,
             enlargeCenterPage: true,
             onPageChanged: (index, reason) {

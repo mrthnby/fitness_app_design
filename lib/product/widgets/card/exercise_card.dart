@@ -39,22 +39,20 @@ class _singleExerciseCard extends StatelessWidget {
           color: exercise.color,
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Expanded(
-          child: ListTile(
-            contentPadding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            leading: Image.asset(
-              exercise.path.imagePath,
-              height: 30,
-              width: 30,
-            ),
-            title: Text(
-              exercise.path.imageMood.capitalize,
-              textAlign: TextAlign.start,
-              style: const TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-              ),
+        child: ListTile(
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          leading: Image.asset(
+            exercise.path.imagePath,
+            height: 30,
+            width: 30,
+          ),
+          title: Text(
+            exercise.path.imageMood.capitalize,
+            textAlign: TextAlign.start,
+            style: const TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
             ),
           ),
         ),
