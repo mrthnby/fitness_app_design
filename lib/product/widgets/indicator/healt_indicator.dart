@@ -16,9 +16,11 @@ class HealtIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Icon(
               icon,
@@ -36,9 +38,9 @@ class HealtIndicator extends StatelessWidget {
           text: TextSpan(
             children: [
               TextSpan(
-                text: value,
+                text: '$value ',
                 style: const TextStyle(
-                  fontSize: 25,
+                  fontSize: 20,
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
@@ -46,7 +48,7 @@ class HealtIndicator extends StatelessWidget {
               TextSpan(
                 text: valueIndicator,
                 style: const TextStyle(
-                  fontSize: 20,
+                  fontSize: 16,
                   color: Colors.black,
                   fontWeight: FontWeight.w600,
                 ),

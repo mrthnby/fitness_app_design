@@ -42,7 +42,7 @@ class _ProfileViewState extends State<ProfileView> {
         top: 20,
       ),
       child: Container(
-        height: 100,
+        height: 90,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: Colors.grey.shade200,
@@ -103,12 +103,15 @@ class _ProfileViewState extends State<ProfileView> {
         offset: const Offset(-15, 0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               'Hello, ${widget.name}',
               style: const TextStyle(fontSize: 18),
+            ),
+            const SizedBox(
+              height: 5,
             ),
             const Text(
               'Ready to workout?',

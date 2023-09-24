@@ -33,7 +33,7 @@ class _WorkoutProgramsBarState extends State<WorkoutProgramsBar>
         automaticallyImplyLeading: false,
         centerTitle: false,
         titleTextStyle: const TextStyle(
-          fontSize: 18,
+          fontSize: 20,
           color: Colors.black,
           fontWeight: FontWeight.bold,
         ),
@@ -53,6 +53,10 @@ class _WorkoutProgramsBarState extends State<WorkoutProgramsBar>
               text: 'Lower',
             ),
           ],
+          labelStyle: const TextStyle(
+            fontSize: 16,
+            fontWeight: FontWeight.w500,
+          ),
           labelPadding: const EdgeInsets.all(0),
           indicatorSize: TabBarIndicatorSize.tab,
           labelColor: Colors.deepPurple.shade900,
